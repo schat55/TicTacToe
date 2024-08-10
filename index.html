@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <span id="mode-label">Light Mode</span>
+        </div>
+        <h1>Tic Tac Toe</h1>
+        <div id="mode-selection">
+            <input type="radio" id="two-players" name="mode" value="two-players">
+            <label for="two-players">Play with Another Player</label><br>
+            <input type="radio" id="with-ai" name="mode" value="with-ai" checked>
+            <label for="with-ai">Play with AI</label><br><br>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="game" class="board">
+            <!-- *** The board will be dynamically created here *** -->
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
